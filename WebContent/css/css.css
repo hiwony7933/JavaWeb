@@ -1,0 +1,42 @@
+body {
+	background-color: #343a40;
+	color: white;
+}
+
+a {
+	color: white;
+}
+
+a:active {
+	color: red;
+}
+
+/* keyany라는 이름의 욺직이는 애니메이션 제작 */
+@-webkit-keyframes keyany {from { left:0px;
+	top: 0px;
+	-webkit-transform: rotate(0deg);
+}
+
+30%{
+left
+:
+700px; /* duration 10s의 30%동안 700px위치로 이동하는 시간  */
+
+		
+	
+}
+to {
+	left: 700px;
+	-webkit-transform: rotate(3600deg); /* 3600 = 10바퀴회전 */
+}
+
+}
+
+/* 애니메이션 적용 */
+img {
+	position: absolute;
+	-webkit-animation-name: keyany;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direcion: alternate;
+}
